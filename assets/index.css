@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("../img/Logo_Background.png");
+    background-size:cover;
+    background-position: center;
+    background-attachment:local;
+    display: flex;
+   justify-content: center;
+    padding:2rem;    
+
+}
+
+h2{
+
+    font-family: "Luckiest Guy", cursive;
+    color: #ffff;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.text_logo{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #ffff;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0, 24px, 0, 24px;
+    max-width: 80%;
+    
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+
+.btn{
+    border-radius: 20px;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+.first{
+    background-color: #ffff;
+    color: black;
+    font-weight:500;
+    border: 1px solid #ffff;
+}
+
+.secunt{
+    background-color: black;
+    color: #ffff;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+
+
+img{
+    max-width: 100%;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.descrition{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h3{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+   
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.two, .four{
+    background-color: #F6F6F6;
+}
+
+.text{
+    color: black;
+    font-size: 2rem;
+}
+
+footer{
+    background-color:#23272A;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img_footer{
+    width: 8rem;
+}
+
+@media screen and (min-width: 720px){
+    .buttons{
+        flex-direction: row;
+    }
+    
+    .content{
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        flex-direction: row;
+    }
+
+    .one, .three{
+        width: 80%;
+    }
+
+    .two{
+        flex-direction: row-reverse;
+        padding: 0 100px 0 100px;
+    }
+
+    .four{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 100px 0 100px;
+
+    }
+
+    .img_four{
+        width: 600px;
+    }
+}
